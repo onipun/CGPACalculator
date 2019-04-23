@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubjectDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="subject Code" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Subject Name" />
+
+        <EditText
+            android:id="@+id/editTextHour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="subject Hour" />
+
+        <Spinner
+            android:id="@+id/spinnerGrader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSaveCal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="saveCal"
+            android:text="Button" />
+
+        <TextView
+            android:id="@+id/totalCGPA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
